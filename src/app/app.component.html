@@ -1,0 +1,13 @@
+<h1>Gestor de Tickets</h1>
+
+<nav>
+  <button type="button" (click)="toggleEditor('name')">Editar nombre</button>
+  <button type="button" (click)="toggleEditor('profile')">Nuevo Ticket</button>
+  <button type="button" (click)="toggleEditor('estado')">Ver Ticket</button>
+</nav>
+
+<app-name-editor *ngIf="showNameEditor"></app-name-editor>
+
+<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>
+
+<app-estado *ngIf="showEstado"></app-estado>
